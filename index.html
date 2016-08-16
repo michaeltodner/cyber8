@@ -1,0 +1,79 @@
+<html>
+<head>
+ <title>Cyber8 | Index</title>
+ 
+ <!-- Meta Info -->
+  <meta charset="utf-8">
+   <meta name="Description" CONTENT="Cyber8 website.">
+   <meta name="Author" content="Michael Todner"/>
+  <meta name="robots" content="noindex,nofollow">
+ <!-- End Of Meta Info -->
+ 
+ <!-- Room For Analytical Code -->
+ <!-- End Of Room For Anayltical Code -->
+ 
+ <!-- CSS And JS Calling -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+   <script async="" src="//www.google-analytics.com/analytics.js"></script> 
+ <!-- End Of CSS And JS Calling -->
+ 
+ <!-- Google Map Code -->
+ <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["map"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Lat', 'Long', 'Name'],
+          [53.800315, -1.559138, 'Cyber8'],
+        ]);
+
+        var map = new google.visualization.Map(document.getElementById('map_div'));
+        map.draw(data, {showTip: true});
+      }
+
+    </script>
+	<!-- End Of Google Map Code -->
+	
+</head>
+<body class="fuelux">
+<header id="header" class="navbar">
+<div class="h1 m-t-mini"><strong>Cyber8</strong></div>
+</header>
+ <nav id="nav" class="nav-primary hidden-xs bg-light">
+<ul class="nav affix-top" data-offset-top="50" data-spy="affix">
+<li class="dropdown-submenu active">
+<li class=""><a href="index.html"><b class="badge bg-danger pull-right"></b><i class="fa fa-home fa-lg"></i><span>Index</span></a></li>
+<li class=""><a href="about.html"><i class="fa fa-question fa-lg"></i><span>About</span></a></li>
+<li class=""><a href="contact.html"><i class="fa fa-envelope fa-lg"></i><span>Contact</span></a></li>
+<li class="dropdown-submenu ">
+<a href="#"><i class="fa fa-gamepad fa-lg"></i><span>Games</span></a>
+<ul class="dropdown-menu">
+<li><a href="games.html">Portal 2</a></li>
+<li><a href="games.html">Minecraft</a></li>
+<li><a href="games.html">League Of Legends</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="content">
+<section class="main padder">
+<div class="row">
+<br>
+<div class="col-xs-12">
+<section class="panel">
+<header class="panel-heading bg-white">
+<div class="h4"><strong>Welcome</strong></div>
+</header>
+<div class="panel-body pull-in">
+<p style="padding-left:5px;"> Lorem ipsum dolor sit amet, mea an aeque maluisset contentiones, id reque ancillae iracundia pro, et sea elitr postea. Nam et dicunt commodo intellegam. Veritus laboramus cu eos, eos iriure accusam patrioque ex. Insolens instructior nam et, ad aeque ridens blandit vel, id altera sapientem sed. Alienum petentium eu vix, primis facete vim ut, eam debet feugait id.</br>
+ Pri paulo ubique an, an est ridens graecis invidunt. Et mei admodum voluptatum neglegentur, an vis atqui denique. Oportere partiendo est te. In vim vidit persius placerat, reque appetere persequeris pro no, eos enim iracundia ei. Duo ad consul oblique comprehensam, dico omittantur sit at, te ius eirmod utroque.</p>
+</div>
+</section>
+</div>
+<div id="map_div" style="width: 400px; height: 300px"></div>
+</section>
+</section>
+</body>
